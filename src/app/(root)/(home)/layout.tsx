@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import SidebarNav from "@/components/Sidebar";
-
+import { Separator } from "@/components/ui/separator";
 
 import { sidebarConfig } from "@/config";
 import React from "react";
@@ -10,6 +10,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     <main className="relative">
       <Navbar />
       <div className="flex">
+        {/* <Separator orientation="vertical" /> */}
         <SidebarNav items={sidebarConfig.sidebarNav} />
         <section className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14">
           <div className="w-full">{children}</div>
