@@ -4,9 +4,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Icons } from "./icons";
@@ -45,7 +42,7 @@ const MobileNav = ({ items }: MobileNavProps) => {
                     pathname.startsWith(`${item.href}/`);
 
                   return item.href ? (
-                    <div>
+                    <SheetClose asChild key={index}>
                       <Link
                         aria-label={item.title}
                         key={index}
@@ -53,25 +50,25 @@ const MobileNav = ({ items }: MobileNavProps) => {
                         target={item.external ? "_blank" : ""}
                         rel={item.external ? "noreferrer" : ""}
                         className={cn(
-                          "flex items-center gap-4 p-4 rounded-lg justify-start",
+                          "flex items-center gap-4 p-4 rounded-lg w-full max-x-60",
                           {
                             "bg-primary": isActive,
                           }
                         )}
                       >
                         {Icon && <Icon aria-hidden="true" />}
-                        <span className="text-lg font-semibold">
-                          {item.title}
-                        </span>
+                        <p className="font-semibold">{item.title}</p>
                       </Link>
-                    </div>
+                    </SheetClose>
                   ) : (
-                    <span
-                      key={index}
-                      className="flex w-full cursor-not-allowed items-center rounded-md p-2 text-muted-foreground hover:underline"
-                    >
-                      {item.title}
-                    </span>
+                    <SheetClose asChild key={index}>
+                      <span
+                        key={index}
+                        className="flex items-center gap-4 p-4 rounded-lg w-full max-x-60"
+                      >
+                        {item.title}
+                      </span>
+                    </SheetClose>
                   );
                 })}
               </section>
