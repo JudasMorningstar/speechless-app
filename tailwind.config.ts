@@ -26,6 +26,12 @@ const config = {
           1: "#1c1f2e",
           2: "#161925",
         },
+        m_card: {
+          1: "#E5B144",
+          2: "#618463",
+          3: "#7D5423",
+          4: "#BCB69A",
+        },
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
