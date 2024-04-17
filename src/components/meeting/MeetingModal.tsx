@@ -1,10 +1,10 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { Icons } from "./icons";
+import { Icons } from "../icons";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 type MeetingModalProps = {
   isOpen: boolean;

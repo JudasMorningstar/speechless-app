@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import HomeCard from "./HomeCard";
+import HomeCard from "../HomeCard";
 import { useRouter } from "next/navigation";
 import MeetingModal from "./MeetingModal";
-import { Textarea } from "./ui/textarea";
+import { Textarea } from "../ui/textarea";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
-import Loader from "./loader";
+import Loader from "../loader";
 import { toast } from "sonner";
 
 const initialValues = {

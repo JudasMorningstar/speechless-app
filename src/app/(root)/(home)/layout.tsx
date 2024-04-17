@@ -1,8 +1,5 @@
-import MobileNav from "@/components/MobileNav";
-import Navbar from "@/components/Navbar";
-import SidebarNav from "@/components/Sidebar";
-import { Separator } from "@/components/ui/separator";
-
+import Navbar from "@/components/navigation/Navbar";
+import SidebarNav from "@/components/navigation/Sidebar";
 import { sidebarConfig } from "@/config";
 import React from "react";
 

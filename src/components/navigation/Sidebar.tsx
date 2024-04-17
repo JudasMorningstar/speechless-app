@@ -7,7 +7,7 @@ import React from "react";
 import { Icons } from "@/components/icons";
 import { SidebarNavItem } from "@/lib/types";
 import { sidebarConfig } from "@/config";
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 
 export interface SidebarNavProps extends React.HTMLAttributes<HTMLDivElement> {
   items: SidebarNavItem[];
