@@ -90,6 +90,7 @@ const MeetingTypeList = () => {
       />
 
       {/* Modals */}
+
       <MeetingModal
         isOpen={meetingState === "isInstantMeeting"}
         onClose={() => setMeetingState(undefined)}
