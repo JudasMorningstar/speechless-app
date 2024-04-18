@@ -1,6 +1,9 @@
 "use client";
 
 import {
+  DeviceSelectorAudioInput,
+  DeviceSelectorAudioOutput,
+  DeviceSelectorVideo,
   DeviceSettings,
   VideoPreview,
   useCall,
@@ -8,10 +11,10 @@ import {
 } from "@stream-io/video-react-sdk";
 import React, { useEffect, useState } from "react";
 
-import { Alert } from "../ui/alert";
-import { Button } from "../ui/button";
-import { Label } from "../ui/label";
-import { Checkbox } from "../ui/checkbox";
+import { Alert } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const MeetingSetup = ({
   setIsSetupComplete,
@@ -58,6 +61,7 @@ const MeetingSetup = ({
     return (
       <Alert
         title="The call has been ended by the host"
+
         // iconUrl="/icons/call-ended.svg"
       />
     );

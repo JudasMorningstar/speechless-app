@@ -200,6 +200,28 @@ export const Icons = {
       <path d="M22 19h-6" {...props} />
     </svg>
   ),
+  layoutList: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-layout-list"
+      {...props}
+    >
+      <rect width="7" height="7" x="3" y="3" rx="1" />
+      <rect width="7" height="7" x="3" y="14" rx="1" />
+      <path d="M14 4h7" />
+      <path d="M14 9h7" />
+      <path d="M14 15h7" />
+      <path d="M14 20h7" />
+    </svg>
+  ),
   loading: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" {...props}>
       <radialGradient
@@ -364,6 +386,24 @@ export const Icons = {
         d="M11.2929 14.2929C10.9024 14.6834 10.9024 15.3166 11.2929 15.7071L12.5858 17L11.2929 18.2929C10.9024 18.6834 10.9024 19.3166 11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L14.7071 17.7071C15.0976 17.3166 15.0976 16.6834 14.7071 16.2929L12.7071 14.2929C12.3166 13.9024 11.6834 13.9024 11.2929 14.2929Z"
         fill="#C9DDFF"
       />
+    </svg>
+  ),
+  user: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-user"
+      {...props}
+    >
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
     </svg>
   ),
   video: (props: IconProps) => (
